@@ -1,25 +1,31 @@
 :root {
     --default-border-radius: 15px;
     --default-padding: 1rem;
+    --hold-border-radius: 10px;
+    --playground-width: 800px;
 }
 
 html {
     font-family: 'Secular One', sans-serif;
 }
 
+body {
+    background-color: #1a1a1a;
+}
+
 .container {
     display: flex;
     margin-top: 2rem;
-    /*background-color: #393f71;*/
-    background-image: url("img/bg.png");
+    background-image: url("img/bg1.png");
     background-position: center;
     background-size: contain;
-    height: 900px;
-    max-width: 800px;
+    max-width: var(--playground-width);
     padding: var(--default-padding);
+    border-radius: 20px;
 }
 
-aside {
+aside,
+.middle {
     padding: var(--default-padding);
     border-radius: var(--default-border-radius);
 }
@@ -31,71 +37,65 @@ aside {
 aside .title {
     color: #2a315e;
     background-color: #fdfdfc;
-    border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+    border-radius: var(--hold-border-radius) var(--hold-border-radius) 0 0;
     padding: 1rem;
     text-align: center;
+    font-size: 25px;
 }
 
 /*****************************************
     SQUARES IMG
 *****************************************/
-[class*="azure-sq"] {
+[class*="sq"] {
     aspect-ratio: 1 / 1;
-    background-image: url("img/azure.png");
     background-size: cover;
     background-position: center;
+}
+
+[class*="azure-sq"] {
+    background-image: url("img/azure.png");
 }
 
 [class*="green-sq"] {
-    aspect-ratio: 1 / 1;
     background-image: url("img/green.png");
-    background-size: cover;
-    background-position: center;
 }
 
 [class*="orange-sq"] {
-    aspect-ratio: 1 / 1;
     background-image: url("img/orange.png");
-    background-size: cover;
-    background-position: center;
 }
 
 [class*="rose-sq"] {
-    aspect-ratio: 1 / 1;
     background-image: url("img/rose.png");
-    background-size: cover;
-    background-position: center;
 }
 
 [class*="violet-sq"] {
-    aspect-ratio: 1 / 1;
     background-image: url("img/violet.png");
-    background-size: cover;
-    background-position: center;
 }
 
 [class*="yellow-sq"] {
-    aspect-ratio: 1 / 1;
     background-image: url("img/yellow.png");
-    background-size: cover;
-    background-position: center;
 }
 
 /*****************************************
     LEFT SIDE
 *****************************************/
-.left .row {
-    /*margin-top: 1rem;*/
-}
-
 .piece-container {
     padding: var(--default-padding);
-    border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    border-radius: 0 0 var(--hold-border-radius) var(--hold-border-radius);
     border: solid #fdfdfd;
-    border-width: 0 10px 10px;
+    border-width: 0 5px 5px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/*****************************************
+    MIDDLE SIDE MAIN
+*****************************************/
+.middle .playground {
+    border: 5px solid rgba(251, 251, 250, 0.5);
+    border-radius: var(--default-border-radius);
+}
 
-
+.playground [class*="col"] {
+    aspect-ratio: 1 / 1;
+}
 

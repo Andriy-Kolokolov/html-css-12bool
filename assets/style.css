@@ -1,0 +1,24 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin-top: 1rem;
+}
+
+[class*="col-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 1rem;
+    color: white;
+    background-color: #006bf8;
+    white-space: nowrap;
+}
+
+[class*="col-"][class*="nested"] {
+    color: white;
+    background-color: #00df64;
+    border-color: #006bf8;
+}

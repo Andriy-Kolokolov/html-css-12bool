@@ -6,6 +6,10 @@ html {
     margin-top: 1rem;
 }
 
+.row {
+    min-height: 3rem;
+}
+
 [class*="col-"] {
     display: flex;
     justify-content: center;
@@ -21,4 +25,8 @@ html {
     color: white;
     background-color: #00df64;
     border-color: #006bf8;
+}
+
+[class*="col-offset-"] {
+    flex-grow: 1;
 }

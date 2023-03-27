@@ -43,6 +43,13 @@ aside .title {
     font-size: 25px;
 }
 
+.piece-container {
+    padding: var(--default-padding);
+    border-radius: 0 0 var(--hold-border-radius) var(--hold-border-radius);
+    background-color: rgba(255, 255, 255, 0.1);
+    aspect-ratio: 1 / 1;
+}
+
 /*****************************************
     SQUARES IMG
 *****************************************/
@@ -79,12 +86,9 @@ aside .title {
 /*****************************************
     LEFT SIDE
 *****************************************/
-.piece-container {
-    padding: var(--default-padding);
-    border-radius: 0 0 var(--hold-border-radius) var(--hold-border-radius);
-    border: solid #fdfdfd;
-    border-width: 0 5px 5px;
-    background-color: rgba(0, 0, 0, 0.4);
+
+.left [class*="col-4"] {
+    aspect-ratio: 1 / 1;
 }
 
 /*****************************************
@@ -93,9 +97,24 @@ aside .title {
 .middle .playground {
     border: 5px solid rgba(251, 251, 250, 0.5);
     border-radius: var(--default-border-radius);
+    background-color: rgba(253, 253, 252, 0.1);
 }
 
 .playground [class*="col"] {
     aspect-ratio: 1 / 1;
 }
 
+/*****************************************
+    RIGHT SIDE
+*****************************************/
+.right [class*="col-4"] {
+    aspect-ratio: 1 / 1;
+}
+
+.right .row:nth-child(n+2) .piece-container {
+    border-radius: 0;
+}
+
+.right .row:last-child .piece-container {
+    border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+}

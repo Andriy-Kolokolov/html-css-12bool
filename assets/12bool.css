@@ -70,52 +70,52 @@
 /*****************************************
    OFFSETS
 *****************************************/
-.col-offset-1 {
+[class*="offset-1"] {
     margin-left: calc((100% / 12) * 1);
 }
 
-.col-offset-2 {
+[class*="offset-2"]  {
     margin-left: calc((100% / 12) * 2);
 }
 
-.col-offset-3 {
+[class*="offset-3"] {
     margin-left: calc((100% / 12) * 3);
 }
 
-.col-offset-4 {
+[class*="offset-4"] {
     margin-left: calc((100% / 12) * 4);
 }
 
-.col-offset-5 {
+[class*="offset-5"] {
     margin-left: calc((100% / 12) * 5);
 }
 
-.col-offset-6 {
+[class*="offset-6"] {
     margin-left: calc((100% / 12) * 6);
 }
 
-.col-offset-7 {
+[class*="offset-7"] {
     margin-left: calc((100% / 12) * 7);
 }
 
-.col-offset-8 {
+[class*="offset-8"] {
     margin-left: calc((100% / 12) * 8);
 }
 
-.col-offset-9 {
+[class*="offset-9"] {
     margin-left: calc((100% / 12) * 9);
 }
 
-.col-offset-10 {
+[class*="offset-10"] {
     margin-left: calc((100% / 12) * 10);
 }
 
-.col-offset-11 {
+[class*="offset-11"] {
     margin-left: calc((100% / 12) * 11);
 
 }
 
-.col-offset-12 {
+[class*="offset-12"] {
     margin-left: calc((100% / 12) * 12);
 }
 

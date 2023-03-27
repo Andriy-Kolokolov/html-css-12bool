@@ -27,6 +27,6 @@ html {
     border-color: #006bf8;
 }
 
-[class*="col-offset-"] {
+[class*="-offset"] {
     flex-grow: 1;
 }
